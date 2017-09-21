@@ -15,3 +15,9 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 `/u/nobackup/xyang123/zhaoyuqi/RNA-seq/Yu_project/Sample_HLZ_14 -- Sample_HLZ_25` <br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
+
+## Mkfastq
+
+## Count
+
+## Aggr
