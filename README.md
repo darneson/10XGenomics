@@ -19,20 +19,49 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
 ## Live Sync
-
-root/ # entry comments can be inline after a '#'
-      # or on their own line, also after a '#'
-
-  readme.md # a child of, 'root/', it's indented
-            # under its parent.
-
-  usage.md  # indented syntax is nice for small projects
-            # and short comments.
-
-  src/          # directories MUST be identified with a '/'
-    fileOne.txt # files don't need any notation
-    fileTwo*    # '*' can identify executables
-    fileThree@  # '@' can identify symlinks
+```
+.
+├── Config
+│   ├── HiSeqControlSoftware.Options.cfg
+│   ├── hjv2fbbxx_2017-09-13 09-55-04_Effective.cfg
+│   ├── hjv2fbbxx_2017-09-13 09-55-04_Override.cfg
+│   ├── hjv2fbbxx_2017-09-13 09-55-05_SortedOverride.cfg
+│   ├── RTAStart.log
+│   └── Variability_HiSeq_E.bin
+├── Data
+│   └── Intensities
+├── InterOp
+│   ├── ColorMatrixMetricsOut.bin
+│   ├── CorrectedIntMetricsOut.bin
+│   ├── EmpiricalPhasingMetricsOut.bin
+│   ├── ErrorMetricsOut.bin
+│   ├── EventMetricsOut.bin
+│   ├── ExtractionMetricsOut.bin
+│   ├── FWHMGridMetricsOut.bin
+│   ├── ImageMetricsOut.bin
+│   ├── PFGridMetricsOut.bin
+│   ├── QMetricsOut.bin
+│   ├── RegistrationMetricsOut.bin
+│   ├── StaticRunMetricsOut.bin
+│   └── TileMetricsOut.bin
+├── Logs
+├── PeriodicSaveRates
+│   └── Save All Thumbnails.xml
+├── Recipe
+│   └── HJV2FBBXX.xml
+├── RTAComplete.txt
+├── RTAConfiguration.xml
+├── RTALogs
+├── RTARead1Complete.txt
+├── RTARead2Complete.txt
+├── RTARead3Complete.txt
+├── RTARead4Complete.txt
+├── RunInfo.xml
+├── runParameters.xml
+├── SequencingComplete.txt
+└── Thumbnail_Images
+    └── L007
+```
 
 ## Mkfastq
 
