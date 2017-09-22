@@ -220,6 +220,31 @@ cellranger mkfastq \
 ## Count
 ### 10X Genomics documentation and tutorials on the count software is available [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)
 
+```
+.
+├── analysis
+│   ├── clustering
+│   ├── diffexp
+│   ├── pca
+│   └── tsne
+├── cloupe.cloupe
+├── filtered_gene_bc_matrices
+│   └── mm10
+│       ├── barcodes.tsv
+│       ├── genes.tsv
+│       └── matrix.mtx
+├── filtered_gene_bc_matrices_h5.h5
+├── metrics_summary.csv
+├── molecule_info.h5
+├── possorted_genome_bam.bam
+├── possorted_genome_bam.bam.bai
+├── raw_gene_bc_matrices
+│   └── mm10
+│       ├── barcodes.tsv
+│       ├── genes.tsv
+│       └── matrix.mtx
+```
+
 ![img](https://i.imgur.com/gyPbCt3.png)
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
