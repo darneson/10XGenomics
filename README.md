@@ -24,6 +24,8 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 
 ## Live Sync
 
+### For 10X single cell analysis, we need raw files directly from the sequencer (.bcl files)
+
 After live sync, directory structure should look something like this. NOTE: we need all these other extra files (they tell cell ranger how the flow cell in sequencer was set up -- we can't just use the .bcl files).
 The .bcl files are located under ./Data/Intesities/BaseCalls/L007
 ```
