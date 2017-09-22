@@ -110,7 +110,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
         * For each sample there are four multiplex indexes which are added during the library preparation <br />
         * You can get your sample index information from whomever prepared the library, an example from one of our libraries is [here](https://github.com/darneson/10XGenomics/blob/master/SampleIndexes.txt), where you can see we have four samples using the following sets of indexes: <**A1**>, <**B1**>, <**C1**>, <**D1**> <br />
         * From the [Sample Index Plate](https://github.com/darneson/10XGenomics/blob/master/chromium-shared-sample-indexes-plate.csv), we can see that each set of indexes corresponds to four unique **Barcodes** <br />
-            *For example, Index Set **SI-GA-A1** (we call this "**A1**") has the following four barcodes: [**GGTTTACT**],[**CTAAACGG**],[**TCGGCGTC**],[**AACCGTAA**] <br />
+            * For example, Index Set **SI-GA-A1** (we call this "**A1**") has the following four barcodes: [**GGTTTACT**],[**CTAAACGG**],[**TCGGCGTC**],[**AACCGTAA**] <br />
         
 |Lane|Sample_ID|Sample_Name|index|Sample_Project|
 |--|--|--|--|--|
