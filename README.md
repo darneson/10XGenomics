@@ -37,6 +37,9 @@ rsync --recursive --times --verbose --stats --progress --itemize-changes rsync:/
 5. You can start downloading the ([.bcl files](http://genomics-bcftbx.readthedocs.io/en/latest/protocols/prep_illumina.html)) via LiveSync as soon as you receive the lane credentials. <br />
     * **NOTE:** You must finish downloading the LiveSync data within 24 hours of the sequencing completion <br />
     * Email Suhua (sfeng [at] mcdb [dot] ucla [dot] edu) and Shawn (Cokus [at] ucla [dot] edu) upon completion of LiveSync so that they can convert the .bcl files to .qseq files for the other lanes <br />
+6. Likely, your LiveSync download will catch up to the sequencing before the sequencing completes, this is ok <br />
+    * You can keep running LiveSync incrementally until you see the file **RTAComplete.txt** in your main <Output_Directory> <br />
+    * See below for an example of what a directory structure looks like upon completion of LiveSync (note the location of the **RTAComplete.txt** file <br />
 
 After live sync, directory structure should look something like this. NOTE: we need all these other extra files (they tell cell ranger how the flow cell in sequencer was set up -- we can't just use the .bcl files).
 The .bcl files are located under ./Data/Intesities/BaseCalls/L007
