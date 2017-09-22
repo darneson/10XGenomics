@@ -104,7 +104,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
     * The [**Header**] subsection contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
     * The read length in the [**Reads**] subsection can be obtained from the <**runParameters.xml**> file obtained from LiveSync see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) for where to find this file <br />
     * The [**Data**] subsection defines your samples and their multiplex indexes <br />
-        * ASDF <br />
+        * Entries for the /**Lane**/ column <br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
