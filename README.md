@@ -33,7 +33,7 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 rsync --recursive --times --verbose --stats --progress --itemize-changes rsync://<lane_credentials>@pan.pellegrini.mcdb.ucla.edu/<lane_credentials>/ <Path/To/Output/Folder/Location>/<Output_Folder_Name>/
 ```
 4. You will be prompted for a password to download the data <br />
-    * This will be supplied with your lane credentials in the format: <lane_credentials>:<password> <br />
+    * This will be supplied with your lane credentials in the format: <**lane_credentials**>:<**password**> <br />
 5. You can start downloading the ([.bcl files](http://genomics-bcftbx.readthedocs.io/en/latest/protocols/prep_illumina.html)) via LiveSync as soon as you receive the lane credentials. <br />
     * **NOTE:** You must finish downloading the LiveSync data within 24 hours of the sequencing completion <br />
     * Email Suhua (sfeng [at] mcdb [dot] ucla [dot] edu) and Shawn (Cokus [at] ucla [dot] edu) upon completion of LiveSync so that they can convert the .bcl files to .qseq files for the other lanes <br />
