@@ -8,7 +8,7 @@ Contents: <br />
 
 The primary 10X Genomics Cell Ranger Workflow can be roughly divided into four steps:
 <ol>
-  <li>Obtain data from UCLA BSCRC Sequencing Core using [LiveSync](https://github.com/darneson/10XGenomics#live-sync) while the sequencer is running</li>
+  <li>Obtain data from UCLA BSCRC Sequencing Core using [LiveSync][## Live Sync] while the sequencer is running</li>
   <li>Convert from .bcl files to .fastq files ([mkfastq](https://github.com/darneson/10XGenomics#mkfastq))</li>
   <li>Generate Digitcal Gene Expression CellxGene Count Matrices from .fastq files for each library separately ([count](https://github.com/darneson/10XGenomics#count))</li>
   <li>Aggregate separate libraries into one matrix and downsample UMI counts to similar coverage [aggr](https://github.com/darneson/10XGenomics#aggr)</li>
