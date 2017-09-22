@@ -116,7 +116,10 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
         * We define the |**Sample_ID**| column as the **Index Set** with an underscore for which **Barcode** is identified in this row (e.g. a |**Sample_ID**| of <**SI-GA-A1_3**> comes from Index Set **SI-GA-A1** and Barcode [**3**]) <br />
         * The |**Sample_Name**| column corresponds to a unique string that will be used to identify each of your samples. This |**Sample_Name**| should be the same for each of the four **Barcode** rows that correspond to that sample. **Note:** This string is important and will be used in later steps <br />
         * The |**index**| column corresponds to the particular **Barcode** of the **Index Set** for that row. These can be obtained based on your index set from [here](https://github.com/darneson/10XGenomics/blob/master/chromium-shared-sample-indexes-plate.csv). **Note:** each sample should have four rows and contain all four **Barcodes** in the |**index**| column corresponding to the correct **Index Set** <br />
-        
+        * The last column is the |**Sample_Project**| column which is a unique name to identify your project. This can be the same for all rows (even if the data comes from multiple lanes). The string assigned here will be populated as a directory in the output of the [count](https://github.com/darneson/10XGenomics#count) function in the next step <br />
+
+### An example [**Data**] subsection for our [samplesheet](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) is shown below
+
 |Lane|Sample_ID|Sample_Name|index|Sample_Project|
 |:--:|:--:|:--:|:--:|:--:|
 |7|SI-GA-A1_1|Aorta1|GGTTTACT|Chromium_20170913|
