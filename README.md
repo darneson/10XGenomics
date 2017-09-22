@@ -18,6 +18,8 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 /u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/bcl-9-13-2017
 ```
 
+### 10X Genomics documentation and tutorials on the tools discussed here can be accessed from this [webpage](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
 ## Live Sync
