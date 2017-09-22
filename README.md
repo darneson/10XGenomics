@@ -117,7 +117,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
         * The |**Sample_Name**| column corresponds to a unique string that will be used to identify each of your samples. This |**Sample_Name**| should be the same for each of the four **Barcode** rows that correspond to that sample. **Note:** This string is important and will be used in later steps <br />
         
 |Lane|Sample_ID|Sample_Name|index|Sample_Project|
-|--|--|--|--|--|
+|:--:|:--:|:--:|:--:|:--:|
 |7|SI-GA-A1_1|Aorta1|GGTTTACT|Chromium_20170913|
 |7|SI-GA-A1_2|Aorta1|CTAAACGG|Chromium_20170913|
 |7|SI-GA-A1_3|Aorta1|TCGGCGTC|Chromium_20170913|
