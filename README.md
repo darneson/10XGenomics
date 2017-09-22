@@ -45,6 +45,7 @@ rsync --recursive --times --verbose --stats --progress --itemize-changes rsync:/
     * **NOTE:** we need all these other extra files (they tell [Cell Ranger](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger) how the flow cell in sequencer was set up -- we can't just use the .bcl files).
     * The .bcl files are located under the following directory <**./Data/Intesities/BaseCalls/L007**> <br />
     * In this case our .bcl files were located in the directory <**L007**> indicating that our data was sequenced on **Lane 7** in the flow cell. <br />
+### LiveSync Directory Structure:
 ```
 .
 ├── Config
@@ -100,7 +101,8 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
 
 1. First, we need to generate a samplesheet (**.csv**) files which describes each of our samples <br />
     * Example samplesheet [here](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) <br />
-    * The [**Header**] contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
+    * The [**Header**] subsection contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
+    * The read length can be obtained from the <**runParameters.xml**> file obtained from LiveSync see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) for where to find this file <br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
