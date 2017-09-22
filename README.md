@@ -149,7 +149,8 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
     * We specify the name of the output directory with the **--id** flag. In this case, we name our output directory **Mkfastq** with the line **--id=Mkfastq** <br />
     * Next, we need to pass the path of our **.bcl** files which we pulled from the sequencer with [Live Sync](https://github.com/darneson/10XGenomics#live-sync) <br />
         * This is done with the **--run** flag. This path should be to a folder that is one level below the output of your **Live Sync** command and is the head directory shown in the [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) above <br />
-    * The last piece of required input is the path of the [samplesheet](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) which is included using the **--samplesheet** flag and is discussed at length in [Step 1](https://github.com/darneson/10XGenomics/#First,-we-need-to-generate-a-samplesheet) of the [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) section <br />
+    * The last piece of required input is the path of the [samplesheet](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) which is included using the **--samplesheet** flag and is discussed at length in [Step 1](https://github.com/darneson/10XGenomics#mkfastq) of the [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) section <br />
+     
 ### Example Bash Script to Submit Mkfastq Job to Hoffman2 Cluster
 ```
 #!/bin/bash
@@ -172,6 +173,46 @@ cellranger mkfastq \
 --run=/u/home/d/darneson/nobackup-xyang123/10X_Single_Cell/LusisCollab/bcl-9-13-2017/LVrfFiltYAP029L7/170913_K00208_0152_AHJV2FBBXX_YAP029/ \
 --samplesheet=/u/home/d/darneson/nobackup-xyang123/10X_Single_Cell/LusisCollab/SampleInfo/cellranger-LiverAorta-bcl-samplesheet.csv \
 --ignore-dual-index
+```
+
+3. The **Output** consists of a number of important pieces of information <br />
+    * The sequencing/data quality can be checked .... <br />
+    
+### Directory Structure of <fastq_path> in <out> directory of mkfastq output
+```
+.
+├── SI-GA-C1_1
+│   ├── LiverControl_S9_L007_I1_001.fastq.gz
+│   ├── LiverControl_S9_L007_R1_001.fastq.gz
+│   └── LiverControl_S9_L007_R2_001.fastq.gz
+├── SI-GA-C1_2
+│   ├── LiverControl_S10_L007_I1_001.fastq.gz
+│   ├── LiverControl_S10_L007_R1_001.fastq.gz
+│   └── LiverControl_S10_L007_R2_001.fastq.gz
+├── SI-GA-C1_3
+│   ├── LiverControl_S11_L007_I1_001.fastq.gz
+│   ├── LiverControl_S11_L007_R1_001.fastq.gz
+│   └── LiverControl_S11_L007_R2_001.fastq.gz
+├── SI-GA-C1_4
+│   ├── LiverControl_S12_L007_I1_001.fastq.gz
+│   ├── LiverControl_S12_L007_R1_001.fastq.gz
+│   └── LiverControl_S12_L007_R2_001.fastq.gz
+├── SI-GA-D1_1
+│   ├── LiverFibrosis_S13_L007_I1_001.fastq.gz
+│   ├── LiverFibrosis_S13_L007_R1_001.fastq.gz
+│   └── LiverFibrosis_S13_L007_R2_001.fastq.gz
+├── SI-GA-D1_2
+│   ├── LiverFibrosis_S14_L007_I1_001.fastq.gz
+│   ├── LiverFibrosis_S14_L007_R1_001.fastq.gz
+│   └── LiverFibrosis_S14_L007_R2_001.fastq.gz
+├── SI-GA-D1_3
+│   ├── LiverFibrosis_S15_L007_I1_001.fastq.gz
+│   ├── LiverFibrosis_S15_L007_R1_001.fastq.gz
+│   └── LiverFibrosis_S15_L007_R2_001.fastq.gz
+└── SI-GA-D1_4
+    ├── LiverFibrosis_S16_L007_I1_001.fastq.gz
+    ├── LiverFibrosis_S16_L007_R1_001.fastq.gz
+    └── LiverFibrosis_S16_L007_R2_001.fastq.gz
 ```
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
