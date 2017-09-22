@@ -100,6 +100,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
 
 1. First, we need to generate a samplesheet (**.csv**) files which describes each of our samples <br />
     * Example samplesheet [here](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) <br />
+    * The [**Header**] contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
