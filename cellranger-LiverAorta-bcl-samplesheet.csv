@@ -1,0 +1,32 @@
+[Header],,,,
+EMFileVersion,4,,,
+Investigator Name,DA,,,
+Experiment Name,utricle_test,,,
+Date,9/13/17,,,
+Workflow,GenerateFASTQ,,,
+Application,HiSeq FASTQ Only,,,
+Description,hiseq sample sheet,,,
+Chemistry,Default,,,
+,,,,
+[Reads],,,,
+101,,,,
+101,,,,
+,,,,
+[Data],,,,
+Lane,Sample_ID,Sample_Name,index,Sample_Project
+7,SI-GA-A1_1,Aorta1,GGTTTACT,Chromium_20170913
+7,SI-GA-A1_2,Aorta1,CTAAACGG,Chromium_20170913
+7,SI-GA-A1_3,Aorta1,TCGGCGTC,Chromium_20170913
+7,SI-GA-A1_4,Aorta1,AACCGTAA,Chromium_20170913
+7,SI-GA-B1_1,Aorta2,GTAATCTT,Chromium_20170913
+7,SI-GA-B1_2,Aorta2,TCCGGAAG,Chromium_20170913
+7,SI-GA-B1_3,Aorta2,AGTTCGGC,Chromium_20170913
+7,SI-GA-B1_4,Aorta2,CAGCATCA,Chromium_20170913
+7,SI-GA-C1_1,LiverControl,CCACTTAT,Chromium_20170913
+7,SI-GA-C1_2,LiverControl,AACTGGCG,Chromium_20170913
+7,SI-GA-C1_3,LiverControl,TTGGCATA,Chromium_20170913
+7,SI-GA-C1_4,LiverControl,GGTAACGC,Chromium_20170913
+7,SI-GA-D1_1,LiverFibrosis,CACTCGGA,Chromium_20170913
+7,SI-GA-D1_2,LiverFibrosis,GCTGAATT,Chromium_20170913
+7,SI-GA-D1_3,LiverFibrosis,TGAAGTAC,Chromium_20170913
+7,SI-GA-D1_4,LiverFibrosis,ATGCTCCG,Chromium_20170913
