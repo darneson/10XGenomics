@@ -102,7 +102,13 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
 1. First, we need to generate a samplesheet (**.csv**) files which describes each of our samples <br />
     * Example samplesheet [here](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) <br />
     * The [**Header**] subsection contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
-    * The read length can be obtained from the <**runParameters.xml**> file obtained from LiveSync see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) for where to find this file <br />
+    * The read length in the [**Reads**] subsection can be obtained from the <**runParameters.xml**> file obtained from LiveSync see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) for where to find this file <br />
+```
+    <Read1>101</Read1>
+    <IndexRead1>8</IndexRead1>
+    <IndexRead2>8</IndexRead2>
+    <Read2>101</Read2>
+```
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
