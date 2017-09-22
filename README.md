@@ -96,7 +96,10 @@ rsync --recursive --times --verbose --stats --progress --itemize-changes rsync:/
 ## Mkfastq
 ### 10X Genomics documentation and tutorials on the mkfastq software is available [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq) <br />
 
-This step demultiplexes our data based on supplied sample indexes and generates **.fastq** files from **.bcl** files by wrapping Illumina's [bcl2fastq](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2_guide_15051736_v2.pdf) software <br />
+This step demultiplexes raw sequencing data based on supplied sample indexes and generates **.fastq** files from **.bcl** files by wrapping Illumina's [bcl2fastq](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2_guide_15051736_v2.pdf) software <br />
+
+1. First, we need to generate a samplesheet (**.csv**) files which describes each of our samples <br />
+    * Example samplesheet [here](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) <br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
