@@ -32,6 +32,7 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 ```
 rsync --recursive --times --verbose --stats --progress --itemize-changes rsync://<lane_credentials>@pan.pellegrini.mcdb.ucla.edu/<lane_credentials>/ <Path/To/Output/Folder/Location>/<Output_Folder_Name>/
 ```
+<br />
     * An example of this command with **lane_credentials** and **password** is available under my directory:
 ```
 /u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/Scripts/AnalysisWorkflow.txt
