@@ -41,7 +41,7 @@ rsync --recursive --times --verbose --stats --progress --itemize-changes rsync:/
     * You can keep running LiveSync incrementally until you see the file **RTAComplete.txt** in your main <Output_Directory> <br />
     * See below for an example of what a directory structure looks like upon completion of LiveSync (note the location of the **RTAComplete.txt** file <br />
 
-7. After LiveSync, directory structure should look something like this. 
+7. After LiveSync, directory structure should look something like below: 
     * **NOTE:** we need all these other extra files (they tell [Cell Ranger](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger) how the flow cell in sequencer was set up -- we can't just use the .bcl files).
     * The .bcl files are located under the following directory <**./Data/Intesities/BaseCalls/L007**> <br />
     * In this case our .bcl files were located in the directory <**L007**> indicating that our data was sequenced on **Lane 7** in the flow cell. <br />
