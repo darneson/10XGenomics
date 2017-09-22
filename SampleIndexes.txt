@@ -1,0 +1,5 @@
+Sample Indexes:
+Aorta1 - A1
+Aorta2 - B1
+LiverControl - C1
+LiverFibrosis - D1
