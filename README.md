@@ -140,7 +140,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
 |7|SI-GA-D1_4|LiverFibrosis|ATGCTCCG|Chromium_20170913|
 
 2. An example **Bash** script to submit a [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) job to the Hoffman2 cluster is provided [below](https://github.com/darneson/10XGenomics#example-bash-script-to-submit-mkfastq-job-to-hoffman2-cluster) <br />
-### Example Bash Script to Submit Mkfastq Job to Hoffman2 Cluster <br/ >
+### Example Bash Script to Submit Mkfastq Job to Hoffman2 Cluster
 ```
 #!/bin/bash
 #$ -cwd
