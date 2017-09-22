@@ -27,6 +27,16 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 1. For 10X single cell analysis, we need raw files directly from the sequencer ([.bcl files](http://genomics-bcftbx.readthedocs.io/en/latest/protocols/prep_illumina.html)) <br />
     * We also need all of the files off the sequencer which describe the flow cell settings <br />
 2. These files can be obtained directly from the sequencer while it is running using LiveSync (additional instructions [here](https://github.com/darneson/10XGenomics/blob/master/LiveSyncInstructions.txt)) <br />
+    * LiveSync uses the [rsync](https://wiki.archlinux.org/index.php/rsync) unix command <br />
+3. The following command can be used to obtain the files: <br />
+```
+rsync --recursive --times --verbose --stats --progress --itemize-changes rsync://<lane_credentials>@pan.pellegrini.mcdb.ucla.edu/<lane_credentials>/ <Path/To/Output/Folder/Location>/<Output_Folder_Name>/
+```
+4. You will be prompted for a password to download the data <br />
+    * This will be supplied with your lane credentials in the format: <lane_credentials>:<password> <br />
+5. You can start downloading the ([.bcl files](http://genomics-bcftbx.readthedocs.io/en/latest/protocols/prep_illumina.html)) via LiveSync as soon as you receive the lane credentials. <br />
+    * **NOTE:** You must finish downloading the LiveSync data within 24 hours of the sequencing completion <br />
+    * Email Suhua (sfeng [at] mcdb [dot] ucla [dot] edu) and Shawn (Cokus [at] ucla [dot] edu) upon completion of LiveSync so that they can convert the .bcl files to .qseq files for the other lanes <br />
 
 After live sync, directory structure should look something like this. NOTE: we need all these other extra files (they tell cell ranger how the flow cell in sequencer was set up -- we can't just use the .bcl files).
 The .bcl files are located under ./Data/Intesities/BaseCalls/L007
