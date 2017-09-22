@@ -6,12 +6,12 @@ Contents: <br />
 3. [count](https://github.com/darneson/10XGenomics#count) <br />
 4. [aggr](https://github.com/darneson/10XGenomics#aggr) <br />
 
-The primary 10X Genomics Cell Ranger Workflow can be roughly divided into three steps:
+The primary 10X Genomics Cell Ranger Workflow can be roughly divided into four steps:
 <ol>
-  <li>Obtain data from UCLA BSCRC Sequencing Core using Live Sync while the sequencer is running</li>
-  <li>Convert from .bcl files to .fastq files (mkfastq)</li>
-  <li>Generate Digitcal Gene Expression CellxGene Count Matrices from .fastq files for each library separately (count)</li>
-  <li>Aggregate separate libraries into one matrix and downsample UMI counts to similar coverage (aggr)</li>
+  <li>Obtain data from UCLA BSCRC Sequencing Core using [LiveSync](https://github.com/darneson/10XGenomics#live-sync) while the sequencer is running</li>
+  <li>Convert from .bcl files to .fastq files ([mkfastq](https://github.com/darneson/10XGenomics#mkfastq))</li>
+  <li>Generate Digitcal Gene Expression CellxGene Count Matrices from .fastq files for each library separately ([count](https://github.com/darneson/10XGenomics#count))</li>
+  <li>Aggregate separate libraries into one matrix and downsample UMI counts to similar coverage [aggr](https://github.com/darneson/10XGenomics#aggr)</li>
 </ol>
 The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lane will be used as an example: <br />
 `/u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/bcl-9-13-2017` <br />
