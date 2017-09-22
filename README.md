@@ -104,9 +104,29 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
     * The [**Header**] subsection contains metadata about the sequencing and experiment which can be modified/updated as desired <br />
     * The read length in the [**Reads**] subsection can be obtained from the <**runParameters.xml**> file obtained from LiveSync see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure) for where to find this file <br />
     * The [**Data**] subsection defines your samples and their multiplex indexes <br />
-        * Entries for the |**Lane**| column can be obtained from the output of your LiveSync under the <**./Data/Intensities/BaseCalls/> directory (see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure)). Although you should already know which lanes you sequenced and which samples are in each lane <br />
+        * Entries for the |**Lane**| column can be obtained from the output of your LiveSync under the <**./Data/Intensities/BaseCalls/**> directory (see [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure)). Although you should already know which lanes you sequenced and which samples are in each lane <br />
         * If you sequenced multiple lanes but only want to analyze a subset of those lanes, you can specify which lanes you want to use here
         * Here, we sequenced in lane 7 as indicated in the |**Lane**| column of our [samplesheet](https://github.com/darneson/10XGenomics/blob/master/cellranger-LiverAorta-bcl-samplesheet.csv) and as seen in the [directory structure](https://github.com/darneson/10XGenomics/#livesync-directory-structure)
+        * For each sample there are four multiplex indexes which are added
+        
+|Lane|Sample_ID|Sample_Name|index|Sample_Project|
+|--|--|--|--|--|
+|7|SI-GA-A1_1|Aorta1|GGTTTACT|Chromium_20170913|
+|7|SI-GA-A1_2|Aorta1|CTAAACGG|Chromium_20170913|
+|7|SI-GA-A1_3|Aorta1|TCGGCGTC|Chromium_20170913|
+|7|SI-GA-A1_4|Aorta1|AACCGTAA|Chromium_20170913|
+|7|SI-GA-B1_1|Aorta2|GTAATCTT|Chromium_20170913|
+|7|SI-GA-B1_2|Aorta2|TCCGGAAG|Chromium_20170913|
+|7|SI-GA-B1_3|Aorta2|AGTTCGGC|Chromium_20170913|
+|7|SI-GA-B1_4|Aorta2|CAGCATCA|Chromium_20170913|
+|7|SI-GA-C1_1|LiverControl|CCACTTAT|Chromium_20170913|
+|7|SI-GA-C1_2|LiverControl|AACTGGCG|Chromium_20170913|
+|7|SI-GA-C1_3|LiverControl|TTGGCATA|Chromium_20170913|
+|7|SI-GA-C1_4|LiverControl|GGTAACGC|Chromium_20170913|
+|7|SI-GA-D1_1|LiverFibrosis|CACTCGGA|Chromium_20170913|
+|7|SI-GA-D1_2|LiverFibrosis|GCTGAATT|Chromium_20170913|
+|7|SI-GA-D1_3|LiverFibrosis|TGAAGTAC|Chromium_20170913|
+|7|SI-GA-D1_4|LiverFibrosis|ATGCTCCG|Chromium_20170913|
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
