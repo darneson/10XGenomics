@@ -220,7 +220,7 @@ cellranger mkfastq \
 ## Count
 ### 10X Genomics documentation and tutorials on the count software is available [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)
 
-![img](https://i.imgur.com/a/1PbtL.png)
+![img](https://i.imgur.com/gyPbCt3.png)
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
