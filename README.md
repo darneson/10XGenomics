@@ -33,9 +33,9 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 rsync --recursive --times --verbose --stats --progress --itemize-changes rsync://<lane_credentials>@pan.pellegrini.mcdb.ucla.edu/<lane_credentials>/ <Path/To/Output/Folder/Location>/<Output_Folder_Name>/
 ```
     * An example of this command with **lane_credentials** and **password** is available under my directory:
- ```
- /u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/Scripts/AnalysisWorkflow.txt
- ```
+```
+/u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/Scripts/AnalysisWorkflow.txt
+```
 4. You will be prompted for a password to download the data <br />
     * This will be supplied with your lane credentials in the format: <lane_credentials>:<password> <br />
 5. You can start downloading the ([.bcl files](http://genomics-bcftbx.readthedocs.io/en/latest/protocols/prep_illumina.html)) via LiveSync as soon as you receive the lane credentials. <br />
