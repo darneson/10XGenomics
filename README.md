@@ -19,7 +19,6 @@ The following 10X single cell dataset generated on a single HiSeq 4000 PE100 lan
 ```
 /u/nobackup/xyang123/darneson/10X_Single_Cell/LusisCollab/bcl-9-13-2017
 ```
-<br />
 
 [Return to Contents](https://github.com/darneson/10XGenomics/#10xgenomics-cell-ranger-workflow)
 
