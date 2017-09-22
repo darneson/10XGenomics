@@ -115,6 +115,7 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
         * For each sample, each of these rows corresponds to one of the four **Barcodes** of an **Index Set** <br />
         * We define the |**Sample_ID**| column as the **Index Set** with an underscore for which **Barcode** is identified in this row (e.g. a |**Sample_ID**| of <**SI-GA-A1_3**> comes from Index Set **SI-GA-A1** and Barcode [**3**]) <br />
         * The |**Sample_Name**| column corresponds to a unique string that will be used to identify each of your samples. This |**Sample_Name**| should be the same for each of the four **Barcode** rows that correspond to that sample. **Note:** This string is important and will be used in later steps <br />
+        * The |**index**| column corresponds to the particular **Barcode** of the **Index Set** for that row. These can be obtained based on your index set from [here](https://github.com/darneson/10XGenomics/blob/master/chromium-shared-sample-indexes-plate.csv). **Note:** each sample should have four rows and contain all four **Barcodes** in the |**index**| column corresponding to the correct **Index Set** <br />
         
 |Lane|Sample_ID|Sample_Name|index|Sample_Project|
 |:--:|:--:|:--:|:--:|:--:|
