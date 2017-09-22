@@ -139,7 +139,15 @@ This step demultiplexes raw sequencing data based on supplied sample indexes and
 |7|SI-GA-D1_3|LiverFibrosis|TGAAGTAC|Chromium_20170913|
 |7|SI-GA-D1_4|LiverFibrosis|ATGCTCCG|Chromium_20170913|
 
-2. An example **Bash** script to submit a [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) job to the Hoffman2 cluster is provided [below](https://github.com/darneson/10XGenomics#example-bash-script-to-submit-mkfastq-job-to-hoffman2-cluster) <br />
+2. An example **Bash** script to submit a [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) job to the Hoffman2 cluster is provided [below](https://github.com/darneson/10XGenomics#example-bash-script-to-submit-mkfastq-job-to-hoffman2-cluster) and an example **Shell** script to qsub is located [here](https://github.com/darneson/10XGenomics/blob/master/runMkfastq.sh) <br />
+    * **Resources**: We request 16GB of RAM and 8 hours run time. I have previously had this take ~11GB of RAM and ~6 hours of run time for a single HiSeq4000 lane. These resources can be adjusted accordingly if demultiplexing more lanes.
+    * If you wish to get emails when your job **runs**, **errors**, and **completes**; then add your email, otherwise remove those lines <br />
+    * The default **gcc** version on Hoffman2 is **4.4**, we need a more recent version for Illumina's **bcl2fastq** software, so we load it with: **module load gcc/4.9.3** <br />
+    * I have already installed Illumina's [bcl2fastq](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2_guide_15051736_v2.pdf) and 10X Genomic's [Cell Ranger](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger) software on our Lab Group's <**shared directory**> so you should all have access to it and be able to add the software to you **PATH** variable with the two **export** lines listed <br />
+    * We **cd** (change directory) to the directory where we would like Cell Ranger to create the output <br />
+    * After adding the Cell Ranger software to our **PATH** variable, we can call the [mkfastq](https://github.com/darneson/10XGenomics#mkfastq) script with **cellranger mkfastq** <br />
+    * We specify the name of the output directory with the **--id** flag. In this case, we name our output directory **Mkfastq** with the line **--id=Mkfastq** <br />
+    * Next, we need to pass the path of our **.bcl** files which we pulled from the sequencer with [Live Sync](https://github.com/darneson/10XGenomics#live-sync) <br />
 ### Example Bash Script to Submit Mkfastq Job to Hoffman2 Cluster
 ```
 #!/bin/bash
